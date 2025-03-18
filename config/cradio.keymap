@@ -26,10 +26,19 @@
 
         layer_2 {
             bindings = <
-&kp TAB  &none  &none     &none     &none     &none            &none           &none         &none            &kp BACKSPACE
-&kp ESC  &none  &mkp MB4  &mkp MB5  &none     &kp LEFT_ARROW   &kp DOWN_ARROW  &kp UP_ARROW  &kp RIGHT_ARROW  &kp ENTER
-&none    &none  &none     &none     &none     &none            &none           &none         &none            &none
-                          &trans    &trans    &kp RIGHT_SHIFT  &trans
+&kp TAB  &sk LEFT_ALT  &sk LCTRL  &sk LEFT_GUI  &none     &none            &none           &none         &none            &kp BACKSPACE
+&kp ESC  &mo 3         &mkp MB4   &mkp MB5      &none     &kp LEFT_ARROW   &kp DOWN_ARROW  &kp UP_ARROW  &kp RIGHT_ARROW  &kp ENTER
+&none    &none         &none      &none         &none     &none            &none           &none         &none            &none
+                                  &trans        &trans    &kp RIGHT_SHIFT  &trans
+            >;
+        };
+
+        layer_3 {
+            bindings = <
+&none  &none  &kp F1    &kp F2    &kp F3    &kp F4          &kp F5          &kp F6        &none            &none
+&none  &none  &mkp MB1  &mkp MB2  &none     &mmv MOVE_LEFT  &mmv MOVE_DOWN  &mmv MOVE_UP  &mmv MOVE_RIGHT  &none
+&none  &none  &kp F7    &kp F8    &kp F9    &kp F10         &kp F11         &kp F12       &none            &none
+                        &trans    &trans    &trans          &trans
             >;
         };
     };
