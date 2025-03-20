@@ -28,18 +28,45 @@
             bindings = <
 &kp TAB  &sk LEFT_ALT  &sk LCTRL   &sk LEFT_GUI   &none     &none            &none           &none         &none            &kp BACKSPACE
 &kp ESC  &tog 3        &kp K_BACK  &kp K_FORWARD  &none     &kp LEFT_ARROW   &kp DOWN_ARROW  &kp UP_ARROW  &kp RIGHT_ARROW  &kp ENTER
-&none    &none         &none       &none          &none     &none            &none           &none         &none            &none
+&mo 4    &none         &none       &none          &none     &none            &none           &none         &none            &mo 5
                                    &trans         &trans    &kp RIGHT_SHIFT  &trans
             >;
         };
 
         layer_3 {
             bindings = <
-&none   &kp F1  &kp F2   &kp F3   &kp F4     &none   &bt BT_PRV  &bt BT_NXT      &none  &none
-&none   &kp F5  &kp F6   &kp F7   &kp F8     &none   &none       &none           &none  &none
-&tog 3  &kp F9  &kp F10  &kp F11  &kp F12    &none   &bt BT_CLR  &bt BT_CLR_ALL  &none  &none
-                         &trans   &trans     &trans  &trans
+&none  &kp F1  &kp F2   &kp F3   &kp F4     &none   &bt BT_PRV  &bt BT_NXT      &none  &none
+&none  &kp F5  &kp F6   &kp F7   &kp F8     &none   &none       &none           &none  &none
+&none  &kp F9  &kp F10  &kp F11  &kp F12    &none   &bt BT_CLR  &bt BT_CLR_ALL  &none  &none
+                        &trans   &trans     &trans  &trans
             >;
+        };
+
+        layer_4 {
+            bindings = <
+&trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans
+                        &trans  &trans    &trans  &trans
+            >;
+        };
+
+        layer_5 {
+            bindings = <
+&trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans
+                        &trans  &trans    &trans  &trans
+            >;
+        };
+    };
+
+    conditional_layers {
+        compatible = "zmk,conditional-layers";
+
+        bltfn {
+            if-layers = <4 5>;
+            then-layer = <3>;
         };
     };
 };
