@@ -62,10 +62,10 @@
 
         layer_6 {
             bindings = <
-&mt LSHFT H        &kp Q  &kp W  &kp E                &kp R        &none   &none  &none  &tog 6  &none
-&mt LCTRL ESCAPE   &kp A  &kp S  &kp D                &kp F        &none   &none  &none  &none   &none
-&mt RIGHT_SHIFT J  &kp Z  &kp X  &kp C                &kp V        &none   &none  &none  &none   &none
-                                 &mt RIGHT_CONTROL K  &kp SPACE    &tog 6  &none
+&mt LSHFT Q        &kp W  &kp E  &kp R                       &kp T        &none   &none  &none  &tog 6  &none
+&mt LCTRL ESCAPE   &kp S  &kp D  &kp F                       &kp G        &none   &none  &none  &none   &none
+&mt RIGHT_SHIFT Z  &kp X  &kp C  &kp V                       &kp B        &none   &none  &none  &none   &none
+                                 &mt RIGHT_CONTROL NUMBER_1  &kp SPACE    &tog 6  &none
             >;
         };
     };
